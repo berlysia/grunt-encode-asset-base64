@@ -14,7 +14,7 @@ var grunt = require("grunt");
 
 module.exports = function(){
 	grunt.initConfig({
-		assetsenc: {
+		assetenc: {
 			map: {
 				"json": function(filepath){
 					return JSON.stringify(JSON.parse(require("fs").readFileSync(filepath)));
@@ -33,13 +33,13 @@ module.exports = function(){
 ```
 
 ```
-$ grunt encode-asset-base64
+$ grunt assetenc
 ```
 
 ### options
 
 ```javascript
-assetsenc: {
+assetenc: {
 	map: {
 		"expr": "mime/types", // add expression to encode to data URI scheme with mime type.
 		"json": function(filepath){

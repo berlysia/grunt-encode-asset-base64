@@ -8,7 +8,7 @@ path = require('path');
 module.exports = function(grunt) {
   var cfgName, taskDescription, taskName;
   cfgName = "assetenc";
-  taskName = "encode-asset-base64";
+  taskName = "assetenc";
   taskDescription = "encode asset(s) to base64";
   return grunt.registerTask(taskName, taskDescription, function() {
     var compile, config, encode, getPaths, toDataschemeBase64, trimName;

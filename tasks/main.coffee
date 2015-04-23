@@ -3,7 +3,7 @@ path = require 'path'
 
 module.exports = (grunt) ->
 	cfgName = "assetenc"
-	taskName = "encode-asset-base64"
+	taskName = "assetenc"
 	taskDescription = "encode asset(s) to base64"
 	grunt.registerTask taskName, taskDescription, ->
 		config = grunt.config cfgName
