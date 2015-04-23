@@ -26,7 +26,7 @@ module.exports = (grunt) ->
 			unless assetRoot?
 				assetRoot = givenRoot
 				assetRoot = assetRoot.replace(/^\.|^\//, "") while /^\.|^\//.test assetRoot
-			naivePath.replace givenRoot, assetRoot
+			naivePath.replace(givenRoot, assetRoot).split(path.sep).join("/")
 
 		encode = (args)->
 			givenMap = config.map || {};

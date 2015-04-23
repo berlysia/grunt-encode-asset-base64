@@ -47,7 +47,7 @@ module.exports = function(grunt) {
           assetRoot = assetRoot.replace(/^\.|^\//, "");
         }
       }
-      return naivePath.replace(givenRoot, assetRoot);
+      return naivePath.replace(givenRoot, assetRoot).split(path.sep).join("/");
     };
     encode = function(args) {
       var givenMap, result;
