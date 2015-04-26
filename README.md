@@ -1,6 +1,6 @@
 grunt-encode-asset-base64
 =====
-grunt plugin to encode assets to base64 data URI scheme for embedding to JavaScript code
+grunt plugin to encode assets to base64 data URI scheme for embedding in JavaScript code
 
 ### install
 ```
